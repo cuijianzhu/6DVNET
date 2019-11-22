@@ -18,7 +18,7 @@ from email.utils import formataddr
 def send_email(subject, message):
     try:
         my_sender = '1158677160@qq.com'  # 邮件发送者
-        my_pass = 'Lly19980726.'  # 邮件发送者邮箱密码
+        my_pass = ''  # 邮件发送者邮箱密码
         my_user = '13777893886@163.com'
         msg = MIMEText(message, 'html', 'utf-8')
         msg['From'] = formataddr(["Gpu小助手", my_sender])
@@ -33,7 +33,7 @@ def send_email(subject, message):
     except:
         try:
             my_sender = '3594782761@qq.com'
-            my_pass = 'kdyruowdlfuachaf'
+            my_pass = ''
             my_user = '13777893886@163.com'
             msg = MIMEText(message, 'html', 'utf-8')
             msg['From'] = formataddr(["Gpu小助手", my_sender])
